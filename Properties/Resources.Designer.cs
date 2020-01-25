@@ -101,6 +101,71 @@ namespace Star_Wars_Character_Finder.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ANAKIN
+        ///DARTH VADER
+        ///LUKE
+        ///OBI-WAN
+        ///C-3PO
+        ///R2-D2
+        ///CHEWBACCA
+        ///HAN
+        ///LEIA
+        ///PADME
+        ///QUI-GON
+        ///EMPEROR
+        ///YODA
+        ///JAR JAR
+        ///LANDO
+        ///RED LEADER
+        ///WEDGE
+        ///BAIL ORGANA
+        ///CAPTAIN PANAKA
+        ///MACE WINDU
+        ///NUTE GUNRAY
+        ///BIGGS
+        ///GOLD LEADER
+        ///GENERAL GRIEVOUS
+        ///TARKIN
+        ///PIETT
+        ///FODE/BEED
+        ///RIC OLIE
+        ///SHMI
+        ///RUNE
+        ///BOBA FETT
+        ///OWEN
+        ///ADMIRAL ACKBAR
+        ///WATTO
+        ///LAMA SU
+        ///COUNT DOOKU
+        ///GOLD FIVE
+        ///RED TEN
+        ///SIO BIBBLE
+        ///JABBA
+        ///MAD MADDA
+        ///TAUN WE
+        ///RIEEKAN
+        ///CAPTAIN TYPHO
+        ///ZEV
+        ///DARTH MAUL
+        ///BRAVO TWO
+        ///JANGO FETT
+        ///BOSS NASS
+        ///GENERAL CEEL
+        ///TEY HOW
+        ///TC-14
+        ///KITSTER
+        ///RUWEE
+        ///CLONE COMMANDER CODY
+        ///CLONE COMMANDER GREE
+        ///KI-A [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string StarWarsCharacters {
+            get {
+                return ResourceManager.GetString("StarWarsCharacters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon starwarslogoicon {
