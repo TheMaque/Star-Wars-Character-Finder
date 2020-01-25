@@ -93,9 +93,9 @@ namespace Star_Wars_Character_Finder.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap starwarscharacterbackground1 {
+        internal static System.Drawing.Bitmap starwarscharacterbackground {
             get {
-                object obj = ResourceManager.GetObject("starwarscharacterbackground1", resourceCulture);
+                object obj = ResourceManager.GetObject("starwarscharacterbackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -48,6 +48,7 @@ namespace Star_Wars_Character_Finder
 			//btnFind.Font = new Font(starwarsfont.Families[1], 8, FontStyle.Regular);
 		}
 
+
 		private void btnFind_Click(object sender, EventArgs e)
 		{
 
