@@ -87,6 +87,12 @@
     <Content Include="Starjedi.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="StarWarsCharacters.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\StarWarsCharacters.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Starwarsfinder resources\starwarslogoicon.ico" />
     <None Include="Starwarsfinder resources\Starjedi.ttf" />
     <None Include="Starwarsfinder resources\starwars logo.png" />
