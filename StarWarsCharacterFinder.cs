@@ -71,6 +71,7 @@ namespace Star_Wars_Character_Finder
 		{
 			LoadFonts();
 			GenerateCharacters();
+			
 
 			
 		}
