@@ -46,12 +46,20 @@ namespace Star_Wars_Character_Finder
 			//btnFind.Font = new Font(starwarsfont.Families[1], 8, FontStyle.Regular);
 		}
 
+		private void PrintArrayContents(ref string[] PrintArray)
+		{
+			foreach (string StarWarsCharacter in PrintArray)
+			{
+				lstCharacters.Items.Add(StarWarsCharacter);
+			}
+
+		}
 	
 		private void LoadCharacters(ref string[] StarWarsCharacters)
 		{
-			StreamReader inputFileReader = File.OpenText("ra");
+			StreamReader inputFileReader = File.OpenText("StarWarsCharacters.csv");
 			int index = 0;
-			while (!inputFileReader.EndOfStream)
+			while (!inputFileReader.EndOfStream) 
 			{
 				StarWarsCharacters[index] = inputFileReader.ReadLine();
 				index++;
@@ -61,18 +69,14 @@ namespace Star_Wars_Character_Finder
 
 		}
 
-		private void GenerateCharacters()
-		{
-			string[] StarWarsCharacters = new string[115];
-		}
 
 
 		private void StarWarsCharacterFinder_Load(object sender, EventArgs e)
 		{
-			LoadFonts();
-			GenerateCharacters();
 			
-
+			string[] StarWarsCharacters = new string[114];
+			LoadCharacters(ref StarWarsCharacters);
+			PrintArrayContents(ref StarWarsCharacters);
 			
 		}
 
