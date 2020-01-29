@@ -86,9 +86,6 @@
   <ItemGroup>
     <None Include="Resources\Find StarWars Button.png" />
     <None Include="Resources\Clear StarWars Button.png" />
-    <Content Include="Starjedi.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="StarWarsCharacters.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

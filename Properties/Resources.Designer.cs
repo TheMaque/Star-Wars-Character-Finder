@@ -91,16 +91,6 @@ namespace Star_Wars_Character_Finder.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] Starjedi {
-            get {
-                object obj = ResourceManager.GetObject("Starjedi", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap starwars_logo {
