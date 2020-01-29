@@ -48,9 +48,9 @@ namespace Star_Wars_Character_Finder
 
 		private void PrintArrayContents(ref string[] PrintArray)
 		{
-			foreach (string StarWarsCharacter in PrintArray)
+			foreach (string StarWarsCharacterList in PrintArray)
 			{
-				lstCharacters.Items.Add(StarWarsCharacter);
+				lstCharacters.Items.Add(StarWarsCharacterList);
 			}
 
 		}
@@ -82,7 +82,16 @@ namespace Star_Wars_Character_Finder
 
 		private void btnFind_Click(object sender, EventArgs e)
 		{
-
+			int index = lstCharacters.FindString(txtCharacterName.Text, -1);
+			if (index != -1)
+			{
+				lstCharacters.SetSelected(index, true);
+			}
+			else
+			{
+				MessageBox.Show("Character not found, try again!");
+				txtCharacterName.Clear();
+			}
 		}
 	}
 }
