@@ -81,6 +81,7 @@
 			this.btnFind.TabIndex = 3;
 			this.btnFind.Text = "Find";
 			this.btnFind.UseVisualStyleBackColor = false;
+			this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
 			// 
 			// picYoda
 			// 

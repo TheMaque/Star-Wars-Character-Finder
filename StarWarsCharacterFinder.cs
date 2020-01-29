@@ -45,32 +45,40 @@ namespace Star_Wars_Character_Finder
 			//txtCharacterName.Font = new Font(starwarsfont.Families[1], 8, FontStyle.Regular);
 			//btnFind.Font = new Font(starwarsfont.Families[1], 8, FontStyle.Regular);
 		}
-		private void LoadCharacters()
+
+	
+		private void LoadCharacters(ref string[] StarWarsCharacters)
 		{
-			StreamReader inputFile;
-			string fileName;
+			StreamReader inputFileReader = File.OpenText("ra");
+			int index = 0;
+			while (!inputFileReader.EndOfStream)
+			{
+				StarWarsCharacters[index] = inputFileReader.ReadLine();
+				index++;
+			}
+			inputFileReader.Close();
+			inputFileReader.Dispose();
 
-			fileName = Path.Combine(Directory.GetCurrentDirectory(), "StarWarsCharacters.csv");
-			inputFile = File.OpenText(fileName);
-
-			
-
-			
 		}
+
+		private void GenerateCharacters()
+		{
+			string[] StarWarsCharacters = new string[115];
+		}
+
 
 		private void StarWarsCharacterFinder_Load(object sender, EventArgs e)
 		{
-			LoadCharacters();
 			LoadFonts();
+			GenerateCharacters();
 
-
-			string[] starwarscharacters = new string[114];
-
-			starwarscharacters[0] = "Anakin";
-			starwarscharacters[1] = "Darth Vader";
-
+			
 		}
 
+		private void btnFind_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
 
