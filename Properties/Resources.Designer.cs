@@ -71,6 +71,26 @@ namespace Star_Wars_Character_Finder.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Clear_StarWars_Button {
+            get {
+                object obj = ResourceManager.GetObject("Clear_StarWars_Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Find_StarWars_Button {
+            get {
+                object obj = ResourceManager.GetObject("Find_StarWars_Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] Starjedi {
@@ -153,11 +173,7 @@ namespace Star_Wars_Character_Finder.Properties {
         ///GENERAL CEEL
         ///TEY HOW
         ///TC-14
-        ///KITSTER
-        ///RUWEE
-        ///CLONE COMMANDER CODY
-        ///CLONE COMMANDER GREE
-        ///KI-A [rest of string was truncated]&quot;;.
+        ///KITSTER        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string StarWarsCharacters {
             get {

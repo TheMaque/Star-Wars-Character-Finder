@@ -34,6 +34,7 @@
 			this.txtCharacterName = new System.Windows.Forms.TextBox();
 			this.btnFind = new System.Windows.Forms.Button();
 			this.picYoda = new System.Windows.Forms.PictureBox();
+			this.btntxtClear = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.picStarWarsLogo)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.picYoda)).BeginInit();
 			this.SuspendLayout();
@@ -70,16 +71,19 @@
 			this.txtCharacterName.Name = "txtCharacterName";
 			this.txtCharacterName.Size = new System.Drawing.Size(300, 20);
 			this.txtCharacterName.TabIndex = 2;
+			this.txtCharacterName.TextChanged += new System.EventHandler(this.txtCharacterName_TextChanged);
 			// 
 			// btnFind
 			// 
-			this.btnFind.BackColor = System.Drawing.Color.Black;
-			this.btnFind.ForeColor = System.Drawing.Color.Yellow;
+			this.btnFind.BackColor = System.Drawing.Color.Transparent;
+			this.btnFind.BackgroundImage = global::Star_Wars_Character_Finder.Properties.Resources.Find_StarWars_Button;
+			this.btnFind.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.btnFind.Enabled = false;
+			this.btnFind.ForeColor = System.Drawing.Color.Transparent;
 			this.btnFind.Location = new System.Drawing.Point(349, 307);
 			this.btnFind.Name = "btnFind";
 			this.btnFind.Size = new System.Drawing.Size(72, 22);
 			this.btnFind.TabIndex = 3;
-			this.btnFind.Text = "Find";
 			this.btnFind.UseVisualStyleBackColor = false;
 			this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
 			// 
@@ -95,6 +99,19 @@
 			this.picYoda.TabIndex = 4;
 			this.picYoda.TabStop = false;
 			// 
+			// btntxtClear
+			// 
+			this.btntxtClear.BackColor = System.Drawing.Color.Black;
+			this.btntxtClear.BackgroundImage = global::Star_Wars_Character_Finder.Properties.Resources.Clear_StarWars_Button;
+			this.btntxtClear.Enabled = false;
+			this.btntxtClear.ForeColor = System.Drawing.Color.Transparent;
+			this.btntxtClear.Location = new System.Drawing.Point(349, 347);
+			this.btntxtClear.Name = "btntxtClear";
+			this.btntxtClear.Size = new System.Drawing.Size(72, 22);
+			this.btntxtClear.TabIndex = 5;
+			this.btntxtClear.UseVisualStyleBackColor = false;
+			this.btntxtClear.Click += new System.EventHandler(this.btntxtClear_Click);
+			// 
 			// StarWarsCharacterFinder
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -102,6 +119,7 @@
 			this.BackgroundImage = global::Star_Wars_Character_Finder.Properties.Resources.starwarscharacterbackground1;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(467, 415);
+			this.Controls.Add(this.btntxtClear);
 			this.Controls.Add(this.btnFind);
 			this.Controls.Add(this.txtCharacterName);
 			this.Controls.Add(this.picStarWarsLogo);
@@ -128,6 +146,7 @@
 		private System.Windows.Forms.TextBox txtCharacterName;
 		private System.Windows.Forms.Button btnFind;
         private System.Windows.Forms.PictureBox picYoda;
-    }
+		private System.Windows.Forms.Button btntxtClear;
+	}
 }
 
