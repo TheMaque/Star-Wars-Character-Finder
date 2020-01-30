@@ -39,6 +39,7 @@ namespace Star_Wars_Character_Finder
 			foreach (string StarWarsCharacterList in PrintArray)
 			{
 				lstCharacters.Items.Add(StarWarsCharacterList);
+				txtCharacterName.AutoCompleteCustomSource.Add(StarWarsCharacterList);
 			}
 
 		}
